@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="./src/css/style.css">
+
+  <script defer src="./src/js/script.js"></script>
+</head>
+<body>
+
+  <table>
+    <thead>
+      <th scope="col">Title</th>
+      <th scope="col">Author</th>
+      <th scope="col">Total Pages</th>
+      <th scope="col">Status</th>
+      <th scope="col">Actions</th>
+    </thead>
+    <tbody class="table-body">
+      
+    </tbody>
+  </table>
+
+  <form>
+    <label for="book-title">Book Title</label>
+    <input type="text" name="book-title" id="book-title" required/>
+
+    <label for="book-author">Author</label>
+    <input type="text" name="book-author" id="book-author" required />
+
+    <label for="book-total-pages">Total Pages</label>
+    <input type="number" name="book-total-pages" id="book-total-pages" required />
+
+    <fieldset>
+      <legend>Status</legend>
+      
+      <label for="book-status"> 
+        <input type="checkbox" name="book-status" id="book-status" />
+        Read?
+      </label>
+    </fieldset>
+
+    <button type="submit" class="add-new-book">Add New Book</button>
+
+  </form>
+
+</body>
+</html>
