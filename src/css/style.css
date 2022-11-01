@@ -1,0 +1,49 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --darkBlue: hsl(215, 54%, 21%);
+  --lightGray: hsl(174, 41%, 90%);
+  --turquoise: hsl(176, 43%, 38%);
+  --white: hsl(0, 0%, 100%);
+  --black: hsl(0, 0%, 0%);
+}
+
+body {
+  color: var(--darkBlue);
+  background-color: var(--lightGray);
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+table {
+  border-collapse: collapse;
+  border: 2px solid var(--black);
+  letter-spacing: 1px;
+}
+
+td, th {
+  border: 1px solid var(--black);
+  padding: 1em 2em;
+}
+
+th {
+  background-color: var(--turquoise);
+  color: var(--white);
+}
+
+fieldset {
+  border: none;
+  padding: 0;
+}
+
+form {
+  border: 1px solid var(--black);
+  padding: 1em;
+}
+
+label {
+  display: block;
+}
